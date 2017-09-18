@@ -11,7 +11,7 @@ public class MenuState extends GameState{
     private String title = "Platformer";
     private Background bg;
 
-    private int currentChoice = 0;
+    private int currentChoice = 4;
     private String[] options = {
             "New Game", "Load Game", "Levels", "Settings", "Exit "
     };
@@ -60,12 +60,19 @@ public class MenuState extends GameState{
 
     private void select(){
         if(currentChoice == 0){
-
+            //new game
         }
         else if(currentChoice == 1){
-            //help
+            //load game
         }
         else if(currentChoice == 2){
+            //levels4
+        }
+        else if(currentChoice == 3){
+            //settings
+        }
+        else if(currentChoice == 4){
+            //exit
             System.exit(0);
         }
 

@@ -31,7 +31,6 @@ public class GamePanel extends JPanel
     private GameStateManager game;
 
     public GamePanel(){
-      //  super();
         setPreferredSize(new Dimension(WIDTH * SCALE,
                 HEIGHT * SCALE));
         setFocusable(true);
@@ -52,7 +51,6 @@ public class GamePanel extends JPanel
                 BufferedImage.TYPE_INT_RGB);
         g = (Graphics2D) image.getGraphics();
         running = true;
-
         game = new GameStateManager();
     }
 
